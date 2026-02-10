@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TE AMO MUCHOTE CAMILITA 💗</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 80px;
+      text-align: center;
+      overflow: hidden;
+    }
+    p {
+      z-index: 10;
+      text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff69b4; }
+      to { text-shadow: 0 0 40px #ff1493, 0 0 60px #ff00ff; }
+    }
+    audio { display: none; }
+  </style>
+</head>
+<body>
+  <p>TE AMO MUCHOTE CAMILITA💖</p>
+
+  <audio autoplay loop id="lluvia">
+    <source src="https://files.catbox.moe/5q1z3k.mp3" type="audio/mpeg">  <!-- Audio viral "Lluvia de Amor" de TikTok trends -->
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <button onclick="document.getElementById('lluvia').play()" style="position:fixed; bottom:20px; padding:15px; background:#ff69b4; color:white; border:none; border-radius:50px; font-size:20px; z-index:10;">
+    Toca para Lluvia de Amor 💕
+  </button>
+</body>
+</html>
